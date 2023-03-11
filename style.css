@@ -218,6 +218,121 @@ img {
    cursor: pointer;
 }
 
+.second-section{
+   display: grid;
+   grid-template-columns: 1fr;
+   grid-template-rows: repeat(9, 1fr);
+   grid-gap: 0.5rem;
+   margin: 0.5rem;
+}
+
+.tittle-second-section{
+   margin-top: 2rem;
+}
+
+.text-tittle-second-section{
+   color: var(--orange-color);
+   font-family: var(--ubuntu-font);
+   font-size: 1.7rem;
+   letter-spacing: -1px;
+}
+
+.arrow-right-tittle{
+   font-size: 1.2rem;
+}
+
+.first-article-second-section,.second-article-second-section,.third-article-second-section,.fourth-article-second-section,.fifth-article-second-section,.sixth-article-second-section,.seventh-article-second-section,.eighth-article-second-section{
+   display:flex;
+}
+
+.picture-1-article-second-section{
+   background-image: url(assets/pic-1st-article-2nd-section.png);
+
+}
+
+.picture-2-article-second-section{
+   background-image: url(assets/pic-2nd-article-2nd-section.webp);
+
+}
+
+.picture-3-article-second-section{
+   background-image: url(assets/pic-1-first-section.jpg);
+
+}
+
+.picture-4-article-second-section{
+   background-image: url(assets/pic-4th-article-2nd-section.jpg);
+
+}
+
+.picture-5-article-second-section{
+   background-image: url(assets/pic-2-first-section.jpg);
+
+}
+
+.picture-6-article-second-section{
+   background-image: url(assets/pic-3-first-section.webp);
+
+}
+
+.picture-7-article-second-section{
+   background-image: url(assets/pic-7th-article-2nd-section.jpg);
+
+}
+
+.picture-8-article-second-section{
+   background-image: url(assets/pic-8th-article-2nd-section.webp);
+
+}
+
+.dry-class{
+   height: 75px;
+   width: 75px;
+   background-size: cover;
+   background-position: 50%;
+   cursor: pointer;
+   flex-shrink: 0;
+}
+
+.info-first-article-second-section{
+   padding: 0.5rem;
+
+}
+
+.tittle-info-first-article-second-section{
+   font-family: var(--ubuntu-font);
+   text-decoration: none;
+   color: var(--black-one);
+}
+
+.tittle-info-first-article-second-section:hover{
+   box-shadow: inset 0 -1px 0 rgba(255, 68, 34, 0.25);
+   color: var(--orange-color);
+}
+
+.text-info-first-article-second-section{
+   color: var(--gray-four);
+   position: relative;
+   top: 0.3rem;
+}
+
+.author-first-article-second-section{
+   color: var(--gray-four);
+   text-decoration: none;
+}
+
+.author-first-article-second-section:hover{
+   color: var(--gray-three);
+}
+
+.dash-point-second-section{
+   font-size: 0.3rem;
+   position: relative;
+   bottom: 0.19rem;
+   left: 0.09rem;
+}
+
+
 /* tablet screen style */
 
 @media screen and (min-width: 768px) {
@@ -227,6 +342,13 @@ img {
       grid-area: top-navbar;
       background-color: black;
    }
+
+   .title-first-1-article-first-section{
+      font-size: 2rem;
+      text-decoration: none;
+      color: white;
+      font-family: var(--ubuntu-font);
+   }   
 
    .left-items-bottom-navbar {
       display: block;
@@ -315,6 +437,84 @@ img {
    .icon-menu-outline {
       display: none;
    }
+
+   .first-section{
+      grid-template-columns: 2fr 1fr;
+      grid-template-rows: repeat (2, 1fr);
+      grid-template-areas:
+      "first-article second-article"
+      "first-article third-article";
+      height: 60vh;
+   }
+
+   .first-article-first-section{
+      grid-area: first-article;
+   }
+
+   .second-article-first-section{
+      grid-area: second-article;
+   }
+
+   .third-article-first-section{
+      grid-area: third-article;
+   }
+   
+   .second-section{
+      grid-template-columns:repeat(3,1fr);
+      grid-template-rows:1fr repeat(3,2fr);
+      grid-gap: 1rem;
+      grid-template-areas: 
+      "tittle-second-section tittle-second-section tittle-second-section"
+      "first-article-second-section second-article-second-section third-article-second-section"
+      "fourth-article-second-section fifth-article-second-section sixth-article-second-section"
+      "seventh-article-second-section eighth-article-second-section ."
+      ;
+   }
+
+   .tittle-second-section{
+      grid-area: tittle-second-section;
+   }
+
+   .first-article-second-section{
+      grid-area: first-article-second-section;
+   }
+
+   .second-article-second-section{
+      grid-area: second-article-second-section;
+   }
+
+   .third-article-second-section{
+      grid-area: third-article-second-section;
+   }
+
+   .fourth-article-second-section{
+      grid-area: fourth-article-second-section;
+   }
+
+   .fifth-article-second-section{
+      grid-area: fifth-article-second-section;
+   }
+
+   .sixth-article-second-section{
+      grid-area: sixth-article-second-section;
+   }
+
+   .seventh-article-second-section{
+      grid-area: seventh-article-second-section;
+   }
+
+   .eighth-article-second-section{
+      grid-area: eighth-article-second-section;
+   }
+
+   .first-article-second-section,.second-article-second-section,.third-article-second-section,.fourth-article-second-section,.fifth-article-second-section,.sixth-article-second-section,.seventh-article-second-section,.eighth-article-second-section{
+      display: block;
+   }
+
+   .picture-1-article-second-section,.picture-2-article-second-section,.picture-3-article-second-section,.picture-4-article-second-section,.picture-5-article-second-section,.picture-6-article-second-section,.picture-7-article-second-section,.picture-8-article-second-section{
+      width: 100%;
+      height: 14vw;
+   }
 }
 
 /* desktop screen style */
@@ -324,10 +524,60 @@ img {
       display: none;
    }
 
+   .title-first-1-article-first-section{
+      font-size: 2.5rem;
+      text-decoration: none;
+      color: white;
+      font-family: var(--ubuntu-font);
+   }
+
+   .title-second-article-first-section{
+      font-size: 1.5rem;
+   }
+
    .header-page {
       grid-template-columns: 1fr;
       grid-template-areas:
          "top-navbar"
          "bottom-navbar";
+   }
+
+   .first-section{
+      height: 75vh;
+   }
+
+   .cover-gradient{
+      background-image: url(assets/cover-gradient.webp);
+      background-repeat: no-repeat;
+      display: block;
+      position: absolute;
+      background-size: cover;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      top:0;
+      mix-blend-mode: lighten;
+   }
+
+   .cover-logo{
+      background-image: url(assets/tnw.svg);
+      display: block;
+      position: absolute;
+      color:white;
+      background-size: contain;
+      background-repeat: no-repeat;
+      top:24px;
+      left: 24px;
+      height: 344px;
+      width: 80vh;
+   }
+
+   .cover-date{
+      display: block;
+      position: absolute;
+      right: 24px;
+      top: 1rem;
+      color: white;
+      font-weight: bolder;
    }
 }
